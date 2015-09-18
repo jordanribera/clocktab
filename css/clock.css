@@ -1,0 +1,39 @@
+body
+{
+
+	margin: 0px;
+
+}
+
+#ClockContainer
+{
+
+	padding: 16px;
+
+}
+
+#ClockContainer > div
+{
+
+	display: inline-block;
+	margin-left: 16px;
+
+}
+
+#ClockContainer >div:first-child
+{
+
+	margin-left: 0px;
+
+}
+
+.Clock
+{
+	
+	height: 256px;
+	width: 256px;
+	background: #f0f0f0;
+
+	box-shadow: 1px 1px 1.5px #808080;
+
+}

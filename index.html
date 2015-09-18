@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html ng-app="clocktabApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>clocktab</title>
+		<link href="css/clock.css" type="text/css" rel="stylesheet">
+		<link href="css/animation.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+
+	<body ng-controller="TabController as tab">
+		<div id="ClockContainer">
+			<div  ng-repeat="thisclock in tab.clocks" ng-controller="ClockController" ng-init="init(thisclock)" ng-class="getClasses()">
+				{{label}}
+				{{clock.fruit}}
+			</div>
+		</div>
+	</body>
+</html
